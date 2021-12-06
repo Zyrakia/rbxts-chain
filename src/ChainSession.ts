@@ -1,4 +1,4 @@
-export class ChainSession<T> {
+export class ChainSession {
 	private cancelled = false;
 
 	public cancel() {

@@ -8,7 +8,7 @@ export class Chain<T> {
 
 	public async startSession(data: T) {
 		const ranLinks = new Array<ChainLink<T>>();
-		const session = new ChainSession<T>();
+		const session = new ChainSession();
 
 		for (const link of this.links) {
 			try {
@@ -35,7 +35,7 @@ export class Chain<T> {
 		return new ChainSessionResult(session, data);
 	}
 
-	private async runLink(link: ChainLink<T>, data: T, session: ChainSession<T>) {
+	private async runLink(link: ChainLink<T>, data: T, session: ChainSession) {
 		if (typeIs(link, 'function')) await link(data, session);
 		else await link.handle(data, session);
 	}
