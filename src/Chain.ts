@@ -12,7 +12,7 @@ export class Chain<T> {
 
 		for (const link of this.links) {
 			try {
-				this.runLink(link, data, session);
+				await this.runLink(link, data, session);
 				ranLinks.push(link);
 			} catch (e) {
 				session.cancel();
