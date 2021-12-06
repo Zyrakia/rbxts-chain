@@ -1,0 +1,40 @@
+{
+    "name": "@rbxts/chain",
+    "description": "Generic chain of command / middleware thingy implementation for roblox-ts.",
+    "version": "0.0.0",
+    "main": "out/init.lua",
+    "license": "MIT",
+    "scripts": {
+        "build": "rbxtsc",
+        "watch": "rbxtsc -w",
+        "prepublishOnly": "yarn run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zyrakia/chain"
+    },
+    "bugs": {
+        "url": "https://github.com/zyrakia/chain/issues"
+    },
+    "types": "out/index.d.ts",
+    "files": [
+        "out/**/!(*.spec|*.server).(lua|d.ts)"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "roblox",
+        "roblox-ts",
+        "rbxts",
+        "middleware"
+    ],
+    "devDependencies": {
+        "@rbxts/compiler-types": "^1.2.7-types.1",
+        "@rbxts/types": "^1.0.556"
+    },
+    "dependencies": {
+        "@rbxts/inspect": "^1.0.1",
+        "@rbxts/ping": "^2.2.5"
+    }
+}
