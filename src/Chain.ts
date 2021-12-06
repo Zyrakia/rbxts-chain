@@ -45,8 +45,8 @@ export class Chain<T> {
 		link.onCancel?.();
 	}
 
-	public addLinks(...link: Array<ChainLink<T>>) {
-		this.links.push(...link);
+	public addLinks(...links: Array<ChainLink<T>>) {
+		this.links = [...this.links, ...links];
 	}
 
 	public removeLink(link: ChainLink<T>) {
