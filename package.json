@@ -11,10 +11,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zyrakia/chain"
+        "url": "https://github.com/zyrakia/rbxts-chain"
     },
     "bugs": {
-        "url": "https://github.com/zyrakia/chain/issues"
+        "url": "https://github.com/zyrakia/rbxts-chain/issues"
     },
     "types": "out/index.d.ts",
     "files": [
